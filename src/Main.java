@@ -2,15 +2,15 @@
 public class Main {
     public static void main(String[] args) {
 
-        Clients c001 = new Clients();
-        c001.firstName = "Emerson";
-        c001.age = 29;
+        Car car = new Car("BMW", "X6", 2024, 130_000);
 
-        Clients c002 = new Clients();
-        c002.firstName = "Eveny";
-        c002.age = 26;
+        car.setModelo("X5");
 
-        c002.newAccount();
+        System.out.println(car.getMarca());
+        System.out.println(car.getModelo());
+        System.out.println(car.getAno());
+        System.out.println("Valor de venda: " + car.valorVenda());
+
 
     }
 }
